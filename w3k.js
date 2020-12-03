@@ -19,16 +19,40 @@ var powers_list = [
 	"Hamilton" ,
 	"Confederacy",
 ];
+
+function parse_csv(url, stepArr){
+   return new Promise(function(resolve, reject){
+       Papa.parse(url, {
+           download:true,
+           step: function(row){
+           		console.log("Read row: "+row.data);
+              stepArr.push(row.data)
+           },
+           complete: resolve       
+       });        
+   });
+}
+
+
+
 function build_map_data(map_data) {
 
 
 		//Papaparse details
 		var raw_details = [];
+		var raw_links = [];
+		const load_details = parse_csv("w3k.territory-details.csv", raw_details);
+		const load_links = parse_csv("w3k.territory-links.csv", raw_links);
+		Promise.all([ load_details, load_links]).then(console.log("CSV Import Complete"));
+
+		console.log(raw_details);
+		console.log(raw_links);
+		/*
 		Papa.parse("w3k.territory-details.csv", {
 		download: true,
 		complete: function(details, file) {
 			console.log("Parsing complete:", details, file);
-			raw_details = details;
+			raw_details = JSON.parse(JSON.stringify(details));
 			},
 		skipEmptyLines : true,
 
@@ -36,18 +60,18 @@ function build_map_data(map_data) {
 		console.log("Results");
 		console.log(raw_details);
 		//papaparse links
-		var raw_links = [];
+
 		Papa.parse("w3k.territory-links.csv", {
 		download: true,
 		complete: function(links, file) {
 			console.log("Parsing complete:", links, file);
-			raw_links = links;
+			raw_links = JSON.parse(JSON.stringify(links));
 			},
 		skipEmptyLines : true,
 
 		});
 		console.log("Results");
-		console.log(raw_links);
+		console.log(raw_links);*/
 
 	//for each record in raw_details
 	//push details data into map_data
@@ -95,9 +119,9 @@ function add_territory (map_data, num_d, short_d, long_d, reg_d, zone_d, type_d,
 		region 		: reg_d,
 		zone 		: zone_d,
 //		number 		: "number" IS KEY
-		type 		: type_d
+		type 		: type_d,
 		supply 		: supply_present,
-		owner 		: supply_d
+		owner 		: supply_d,
 		access : {
 			land	: false,
 			sea		: false,
@@ -105,7 +129,7 @@ function add_territory (map_data, num_d, short_d, long_d, reg_d, zone_d, type_d,
 			south	: false,
 			east	: false,
 			west	: false,
-		}
+		},
 		links : {},
 	};
 	console.log("Adding territory "+num_d+": "+long_d+" to map data");
@@ -167,7 +191,7 @@ function validate_territory(map_data, territory_number) {
 				} else {
 					//ERROR
 					console.log(
-						"ERROR: Territory "+territory_number+": "
+						"ERROR: Territory "+territory_number+": "+
 						map_data[territory_number].shortname + " has valid access for "
 						+interface+ " but no links interface!!");
 					console.log(map_data[territory_number])
@@ -179,7 +203,7 @@ function validate_territory(map_data, territory_number) {
 				} else {
 					//ERROR
 					console.log(
-						"ERROR: Territory "+territory_number+": "
+						"ERROR: Territory "+territory_number+": "+
 						map_data[territory_number].shortname + " has a links interface for "
 						+interface+ " but access is FALSE!!");
 					console.log(map_data[territory_number])
@@ -206,7 +230,7 @@ function reciprocal_link_test( link_origin, link_target, map_data ) {
 		); //end interface loop
 	if (!(reciprocal_link_found)) {
 		console.log (
-			"ERROR: No link from Territory "+ link_target + ": "map_data[link_target].shortname
+			"ERROR: No link from Territory "+ link_target + ": "+map_data[link_target].shortname
 			+ " was found back to Territory "+link_origin+": "+map_data[link_origin].longname 
 			)
 	}
