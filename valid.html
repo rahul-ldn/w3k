@@ -1,13 +1,15 @@
 <HTML>
 <HEAD>
 	<TITLE>Wars of the Three Kingdoms Validation and Testing</TITLE>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA==" crossorigin="anonymous"></script>
+	<SCRIPT SRC="w3k.territory-details.js"></SCRIPT>
+	<SCRIPT SRC="w3k.territory-links.js"></SCRIPT>
 	<SCRIPT SRC="w3k.js"></SCRIPT>
 	<SCRIPT>
 		var map_data = [];
 		build_map_data(map_data);
 		map_data.forEach(
 			territory => validate_territory(map_data, territory));
+		console.log(map_data);
 	</SCRIPT>
 </HEAD>
 <BODY> 
