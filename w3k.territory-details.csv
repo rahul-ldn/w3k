@@ -1,0 +1,384 @@
+101,Rutland,The County of Rutland,,England,Land,No
+102,Kesteven,The Parts of Kesteven,In Lincolnshire,England,Land,Yes
+103,Holland,The Parts of Holland,In Lincolnshire,England,Coast,No
+104,Norfolk,The County of Norfolk,,England,Coast,No
+105,Suffolk,The County of Suffolk,,England,Coast,Yes
+106,Cambridgeshire,Cambridgeshire,,England,Land,Yes
+107,Huntingdonshire,Huntingdonshire,,England,Land,No
+108,Bedfordshire,Bedfordshire,,England,Land,Yes
+109,Hertfordshire,Hertfordshire,,England,Land,No
+110,Essex,The County of Essex,,England,Coast,Yes
+111,Aylesford,The Lathe of Aylesford,In Kent,England,Coast,Yes
+112,Shepway and Scray,The Lathes of Shepway and Scray,In Kent,England,Coast,No
+113,St Augustine,The Lathe of St Augustine,In Kent,England,Coast,No
+114,Canterbury,The City of Canterbury,In Kent,England,Land,Yes
+115,Hastings and Pevensey,Hastings and Pevensey,In Sussex,England,Coast,Yes
+116,Lewes and Bramber,Lewes and Bramber,In Sussex,England,Coast,No
+117,Arundel and Chichester,Arundel and Chichester,In Sussex,England,Coast,Yes
+118,Worcestershire,Worcestershire,,England,Land,Yes
+119,Clitheroe,The Honour of Clitheroe,,England,Land,No
+120,Carlisle,The City of Carlisle, in Cumberland,England,Coast,Yes
+121,Southamptonshire,Southamptonshire,,England,Coast,No
+123,Dorset,The County of Dorset,,England,Coast,No
+124,Portland Castle,Portland Castle,In Devon,England,Coast,Yes
+125,Devon,The Shire of Devon,,England,Coast,Yes
+126,Cornwall,The Duchy of Cornwall,,England,Coast,No
+127,Penzance,The Port of Penzance,In Cornwall,England,Coast,No
+128,Deal,The Port of Deal,in Kent,England,Coast,Yes
+129,Somerset,The Shire of Somerset,,England,Coast,No
+130,Wiltshire,Wiltshire,,England,Land,Yes
+131,Berkshire,Berkshire,,England,Land,Yes
+132,Surrey,The County of Surrey,,England,Coast,No
+133,Sutton-at-Hone,The Lathe of Sutton-at-Hone,in Kent,England,Coast,Yes
+134,London,The City of London,,England,Coast,Yes
+135,Buckinghamshire,Buckinghamshire,,England,Land,No
+136,Oxfordshire,Oxfordshire,,England,Land,Yes
+137,Gloucestershire,Gloucestershire,,England,Coast,Yes
+138,Warwickshire,Warwickshire,,England,Land,No
+139,Northamptonshire,Northamptonshire,,England,Land,No
+140,Leicestershire,Leicestershire,,England,Land,No
+141,Nottinghamshire,Nottinghamshire,,England,Land,Yes
+142,W Lindsey,The West Riding of Lindsey,in Lincolnshire,England,Land,No
+143,S Lindsey,The South Riding of Lindsey,in Lincolnshire,England,Coast,Yes
+144,N Lindsey,The North Riding of Lindsey,in Lincolnshire,England,Coast,No
+145,York,The City of York,,England,Land,Yes
+146,E Yorkshire,The East Riding of Yorkshire,,England,Coast,No
+147,N Yorkshire,The North Riding of Yorkshire,,England,Coast,No
+148,W Yorkshire,The West Riding of Yorkshire,,England,Land,No
+149,Hull,Kingston-upon-Hull,,England,Coast,Yes
+150,Derbyshire,Derbyshire,,England,Land,No
+151,Staffordshire,Staffordshire,,England,Land,Yes
+152,Cheshire,The County Palatine of Cheshire,,England,Coast,Yes
+153,Lancashire,The County Palatine of Lancashire,,England,Coast,Yes
+154,Furness,Islands of Furness,,England,Coast,No
+155,Lonsdale,Lonsdale, in Lancashire,England,Coast,No
+156,Westmorland,The County of Westmorland,,England,Coast,Yes
+157,Durham,The County Palatine of Durham,,England,Coast,Yes
+158,Northumberland,The County of Northumberland,,England,Coast,No
+159,Allerdale,Allerdale,in Cumberland,England,Coast,Yes
+160,Eskdale,Eskdale,in Cumberland,England,Land,No
+161,Pembroke,The Shire of Pembroke,,Wales,Coast,Yes
+162,Carmarthenshire,Carmarthenshire,,Wales,Coast,No
+163,Glamorganshire,Glamorganshire,,Wales,Coast,Yes
+164,Monmouthshire,Monmouthshire,,Wales,Coast,No
+165,Herefordshire,Herefordshire,,Wales,Land,No
+166,Brecknockshire,Brecknockshire,,Wales,Land,Yes
+167,Radnorshire,Radnorshire,,Wales,Land,No
+168,Shropshire,Shropshire,,England,Land,No
+169,Montgomeryshire,Montgomeryshire,,Wales,Land,Yes
+170,Cardiganshire,Cardiganshire,,Wales,Coast,Yes
+171,Merionethshire,Merionethshire,,Wales,Coast,No
+172,Caernarfonshire,Caernarfonshire,,Wales,Coast,Yes
+173,Anglesey,The Island of Anglesey,,Wales,Coast,No
+174,Denbighshire,Denbighshire,,Wales,Coast,Yes
+175,Flintshire,Flintshire,,Wales,Coast,Yes
+176,Guernsey,The Balliwick of Guernsey,In the Duchy of Normandy,England,Coast,No
+177,Jersey,The Balliwick of Jersey,In the Duchy of Normandy,England,Coast,Yes
+178,Deptford,The Deptford Dockyard,In Surrey,England,Coast,Yes
+179,Portsmouth,Portsmouth Harbour, in Southamptonshire,England,Coast,Yes
+180,Corfe Castle,Corfe Castle, in Dorset,England,Coast,Yes
+181,Plymouth,The Port of Plymouth, in Devon,England,Coast,Yes
+182,Bristol,The City of Bristol,,England,Coast,Yes
+183,White Horse,The Vale of White Horse,In Berkshire,England,Land,No
+184,Wallingford,The Honour of Wallingford,In Oxfordshire,England,Land,No
+185,Kenilworth,Kenilworth Castle,In Warwickshire,England,Land,No
+186,Ashby-de-la-Zouch,Ashby-de-la-Zouch Castle,in Leicestershire,England,Land,No
+187,Bolsover,Bolsover Castle,In Derbyshire,England,Land,Yes
+188,Pontrefact,Honour of Pontrefact,,England,Land,No
+189,Richmond,Honour of Richmond,,England,Land,No
+190,Barnard,Barnard Castle," in Teesdale, Durham",England,Land,No
+191,Norham & Carham Castles,Norham & Carham Castles, in Northumberland,England,Land,No
+192,New Sarum,New Sarum,in Wiltshire,England,Land,Yes
+193,Colcester,Colcester, in Essex,England,Coast,Yes
+194,Norwich,Norwich, in Norfolk,England,Land,Yes
+195,Great Yarmouth,Great Yarmouth, in Norfolk,England,Coast,Yes
+196,King’s Lynn,King’s Lynn, in Norfolk,England,Coast,Yes
+197,Coventry,Coventry,In Warwickshire,England,Land,Yes
+198,Shrewsbury,Shrewsbury,In Shropshire,England,Land,Yes
+199,Newcastle-upon-Tyne,Newcastle-upon-Tyne,,England,Coast,Yes
+200,Lundy,The Island of Lundy,In Devon,England,Coast,No
+201,Shetlands,The Shetland Islands,,Scotland,Coast,Yes
+202,Orkney,The Orkney Islands,,Scotland,Coast,Yes
+203,Caithness,The Shire of Caithness,,Scotland,Coast,No
+204,Sutherland,The Shire of Sutherland,,Scotland,Coast,Yes
+205,Ross,The Shire of Ross,,Scotland,Coast,No
+206,Nairn,The Shire of Nairn,,Scotland,Coast,No
+207,Elgin,The Shire of Elgin,,Scotland,Coast,Yes
+208,Banff,The Shire of Banff,,Scotland,Coast,No
+209,Buchan and Formartine,Buchan and Formartine,,Scotland,Coast,Yes
+210,Mearns,The Stewartry of the Mearns,,Scotland,Coast,No
+211,Forfar,The Shire of Forfar,,Scotland,Coast,Yes
+212,Perth,The Shire of Perth,,Scotland,Coast,Yes
+213,Strathearn,Strathearn,,Scotland,Land,No
+214,Argyll,The Shire of Argyll,,Scotland,Coast,Yes
+215,Lorne,Lorne,,Scotland,Coast,Yes
+216,Breadalbane,Breadalbane,,Scotland,Land,No
+217,Athole,Athole,,Scotland,Land,No
+218,Gowrie,Scone within Gowrie,,Scotland,Land,No
+219,Marr,The Stewartry of Marr,,Scotland,Coast,Yes
+220,Strathspey,Strathspey,,Scotland,Coast,Yes
+221,Badenoc,Badenoc,,Scotland,Coast,No
+222,Knapdale,Knapdale,,Scotland,Coast,No
+223,Kintyre,Kintyre,,Scotland,Coast,Yes
+224,Lochaber,Lochaber,,Scotland,Coast,Yes
+225,Lennox,The Lennox,,Scotland,Coast,No
+226,Strathgryffe,Strathgryffe,,Scotland,Coast,No
+227,Cunninghame,The Bailiery of Cunninghame,in Ayrshire,Scotland,Coast,Yes
+228,Kyle,The Bailiery of Kyle,in Ayrshire,Scotland,Coast,Yes
+229,Carrick,The Bailiery of Carrick,in Ayrshire,Scotland,Coast,No
+230,Machars,The Machars,In the Shire of Wigtown,Scotland,Coast,No
+231,Kirkcudbright,The Stewartry of Kirkcudbright,,Scotland,Coast,Yes
+232,Annandale & Nithsdale,Annandale & Nithsdale,,Scotland,Coast,No
+233,Clydesdale,Clydesdale,,Scotland,Land,No
+234,Menteith,Vale of Menteith,,Scotland,Coast,Yes
+235,Fife,Fife,,Scotland,Coast,Yes
+236,Lauderdale,Lauderdale,,Scotland,Coast,No
+237,Edinburgh,Edinburgh,,Scotland,Coast,Yes
+238,Haddington,The Shire of Haddington,,Scotland,Coast,No
+239,Merse,The Merse,,Scotland,Coast,No
+240,Teviotdale & Liddesdale,Teviotdale & Liddesdale,,Scotland,Land,Yes
+241,Ettrick Forest,Ettrick Forest,In the Shire of Selkirk,Scotland,Land,No
+242,Tweeddale,Tweeddale,,Scotland,Land,Yes
+243,Rhins,The Rhins of Galloway,In the Shire of Wigtown,Scotland,Coast,Yes
+244,Douglas,Douglas, on the Isle of Man,Scotland,Coast,Yes
+245,Ramsey,Ramsey, on the Isle of Man,Scotland,Coast,No
+246,Kinross,The Shire of Kinross,,Scotland,Coast,No
+247,Stirling,Stirling,,Scotland,Coast,Yes
+248,Coll & Tiree,Coll & Tiree,,Scotland,Land,No
+249,St Kilda,St Kilda,,Scotland,Coast,No
+250,Stornoway,Stornoway,on Lewis,Scotland,Coast,Yes
+251,Lewis,Lewis,,Scotland,Coast,Yes
+252,Harris,Harris,,Scotland,Coast,No
+253,North Uist,North Uist,,Scotland,Coast,No
+254,South Uist,South Uist,,Scotland,Coast,No
+255,Kisimul Castle,Kisimul Castle,on Barra,Scotland,Coast,Yes
+256,Cape Wrath,Cape Wrath, in Sutherland,Scotland,Coast,Yes
+257,John o’Groats,John o’Groats, in Caithness,Scotland,Coast,No
+258,Skye,The Isle of Skye,,Scotland,Coast,Yes
+259,Mull,Mull,,Scotland,Coast,Yes
+260,Islay,Islay,,Scotland,Coast,Yes
+261,Jura,The Isle of Jura,,Scotland,Coast,No
+262,Arran and Bute,Arran and Bute,,Scotland,Coast,No
+263,Gylen Castle,Gylen Castle,in Lorne,Scotland,Coast,Yes
+264,Fort William,Fort William,,Scotland,Coast,Yes
+265,Inverness,Inverness,,Scotland,Coast,Yes
+266,Glasgow,Glasgow,,Scotland,Coast,Yes
+267,Aberdeen,Aberdeen,,Scotland,Coast,Yes
+268,Black Isle & Tarbet,Black Isle & Tarbet,In the Shire of Cromarty,Scotland,Coast,Yes
+269,Coigach,Coigach,In the Shire of Cromarty,Scotland,Coast,No
+301,Antrim,County Antrim, in Ulster,Ireland,Coast,No
+302,Londonderry,County Londonderry, in Ulster,Ireland,Coast,Yes
+303,Tyrone,County Tyrone, in Ulster,Ireland,Land,Yes
+304,Armagh,County Armagh, in Ulster,Ireland,Land,No
+305,Down,County Down, in Ulster,Ireland,Coast,No
+306,Donegal,County Donegal, in Ulster,Ireland,Coast,No
+307,Louth,County Louth,"of Leinster, in the Pale",Ireland,Coast,No
+308,Meath,County Meath,"of Leinster, in the Pale",Ireland,Coast,Yes
+309,Kildare,County Kildare,"of Leinster, in the Pale",Ireland,Land,No
+310,Dublin,Dublin & the Pale,,Ireland,Coast,Yes
+311,Wicklow in Leinster,County Wicklow,in Leinster,Ireland,Coast,No
+312,Wexford in Leinster,County Wexford,in Leinster,Ireland,Coast,Yes
+313,Carlow in Leinster,County Carlow,in Leinster,Ireland,Land,No
+314,Queens County in Leinster,The Queen's County,in Leinster,Ireland,Land,No
+315,Kings County in Leinster,The King’s County,in Leinster,Ireland,Land,No
+316,Westmeath in Leinster,County Westmeath,in Leinster,Ireland,Land,No
+317,Cavan in Ulster,County Cavan, in Ulster,Ireland,Land,No
+318,Monaghan,County Monaghan, in Ulster,Ireland,Land,No
+319,Fermanagh,County Fermanagh, in Ulster,Ireland,Land,No
+320,Letrim,County Letrim,in Connaught,Ireland,Coast,Yes
+321,Longford,County Longford,in Connaught,Ireland,Land,No
+322,Sligo,County Sligo,in Connaught,Ireland,Coast,Yes
+323,Mayo,County Mayo,in Connaught,Ireland,Coast,No
+324,Roscommon,County Roscommon,in Connaught,Ireland,Land,Yes
+325,Galway,County Galway,in Connaught,Ireland,Coast,No
+326,Inishmore,Inishmore,within County Galway in Connaught,Ireland,Coast,Yes
+327,Clare,County Clare, in Munster,Ireland,Coast,No
+328,Palatine Tipperary,The County Palatine of Tipperary, in Munster,Ireland,Land,Yes
+329,Kilkenny,County Kilkenny, in Munster,Ireland,Land,Yes
+330,Cross Tipperary,Cross Tipperary and the Golden Vale, in Munster,Ireland,Land,Yes
+331,Waterford,County Waterford, in Munster,Ireland,Coast,Yes
+332,E Riding Cork,The East Riding of County Cork, in Munster,Ireland,Coast,Yes
+333,Limerick,County Limerick, in Munster,Ireland,Coast,Yes
+334,Kerry,County Kerry, in Munster,Ireland,Coast,No
+335,W Riding Cork,The West Riding of County Cork, in Munster,Ireland,Coast,No
+336,Belfast,"Belfast, City & Castle",,Ireland,Coast,Yes
+337,Derry,County Derry, in Londonderry,Ireland,Coast,Yes
+338,Ennis,County Ennis, in Clare,Ireland,Coast,Yes
+339,Clonmel,Clonmel,in Cross Tipperary,Ireland,Land,Yes
+340,Maryborough,Maryborough, in Queens,Ireland,Land,Yes
+341,Drogheda,Drogheda,in Meath,Ireland,Land,Yes
+342,Dundalk,Dundalk,in Louth,Ireland,Coast,Yes
+343,Portadown,Portadown,in Armagh,Ireland,Coast,Yes
+344,Bangor,Bangor, in Down,Ireland,Coast,Yes
+401,Brittany,Brittany, in France,Continent,Coast,No
+402,Ushant,Ushant,in French Brittany,Continent,Coast,No
+403,Lower Normandy,Lower Normandy, in France,Continent,Coast,No
+404,Upper Normandy,Upper Normandy, in France,Continent,Coast,No
+405,Picardy,Picardy, in France,Continent,Coast,No
+406,Flanders and Brabant,Flanders and Brabant,in the Spanish Netherlands,Continent,Coast,No
+407,"Zeeland, the Staats-Brabant, and -Vlaanderen","Zeeland, the Staats-Brabant, and -Vlaanderen", in the United Provinces,Continent,Coast,No
+408,Holland,Holland, in the United Provinces,Continent,Coast,No
+409,Upper Provinces,The Upper Provinces, of the Netherlands,Continent,Coast,No
+410,Nantes,Nantes,in French Brittany,Continent,Coast,Yes
+411,Brest,Brest,in French Brittany,Continent,Coast,Yes
+412,Cherbourg,Cherbourg,in French Normandy,Continent,Coast,Yes
+413,Le Havre,Le Havre,in French Normandy,Continent,Coast,Yes
+414,Rouen,Rouen,in French Normandy,Continent,Coast,Yes
+415,Antwerp,Antwerp, in the Spanish Netherlands,Continent,Coast,Yes
+416,Den Haag,Den Haag,in the United Provinces,Continent,Coast,Yes
+417,Amsterdam,Amsterdam, in the United Provinces,Continent,Coast,Yes
+418,Utrecht,Utrecht, in the United Provinces,Continent,Coast,Yes
+419,Saint-Valery-sur-Somme,Saint-Valery-sur-Somme,in French Picardy,Continent,Coast,Yes
+1010,Fair Isle SA,Fair Isle Sea Area,,Ocean,Sea,No
+1011,Pobie Bank (Fair Isles),,,Ocean,Sea,No
+1012,Forty Mile Ground (Fair Isles),,,Ocean,Sea,No
+1013,Pentland Skerries Ground (Fair Isles),,,Ocean,Sea,No
+1014,Scapa Flow (Fair Isles),,,Ocean,Sea,No
+1015,Windsock & the Foula Bight (Fair Isles),,,Ocean,Sea,No
+1020,Cromarty,,,Ocean,Sea,No
+1021,Inner Moray Firth (Cromarty),,,Ocean,Sea,No
+1022,Outer Moray Firth (Cromarty),,,Ocean,Sea,No
+1023,Little Halibut Bank (Cromarty),,,Ocean,Sea,No
+1024,Buchan Deep (Cromarty),,,Ocean,Sea,No
+1030,Firth of Forth,,,Ocean,Sea,No
+1031,Dooley Current (Firth of Forth),,,Ocean,Sea,No
+1032,Wee Bankie (Firth of Forth),,,Ocean,Sea,No
+1033,Main Channel (Firth of Forth),,,Ocean,Sea,No
+1034,Firth of Tay (Firth of Forth),,,Ocean,Sea,No
+1040,The Forties,,,Ocean,Sea,No
+1041,Utsira High (Forties),,,Ocean,Sea,No
+1042,The Gut (Forties),,,Ocean,Sea,No
+1043,Devil’s Hole (Forties),,,Ocean,Sea,No
+1044,Long Forties (Forties),,,Ocean,Sea,No
+1045,Fladden Ground (Forties),,,Ocean,Sea,No
+1050,Tyne,,,Ocean,Sea,No
+1051,Farn Deeps (Tyne),,,Ocean,Sea,No
+1052,The Mouth of the Tyne,,,Ocean,Sea,No
+1053,Robin Hood’s Bay (Tyne),,,Ocean,Sea,No
+1054,Cornelian Bay (Tyne),,,Ocean,Sea,No
+1060,Dogger Bank SA,Dogger Bank Sea Area,,Ocean,Sea,No
+1061,NE Dogger Bank,Northeast Dogger Bank,,Ocean,Sea,No
+1062,SE Dogger Bank,Southeast Dogger Bank,,Ocean,Sea,No
+1063,SW Dogger Bank,Southwest Dogger Bank,,Ocean,Sea,No
+1064,NW Dogger Bank,Northwest Dogger Bank,,Ocean,Sea,No
+1070,Heligoland Bight SA,Heligoland Bight Sea Area,,Ocean,Sea,No
+1071,Horns Rev,Horns Rev,in the Heligoland Bight,Ocean,Sea,No
+1072,Waddenzee,Waddenzee,in the Heligoland Bight,Ocean,Sea,No
+1073,Rede Van Texel,Rede Van Texel,in the Heligoland Bight,Ocean,Sea,No
+1074,Outer German Bight,Outer German Bight,in the Heligoland Sea Area,Ocean,Sea,No
+1080,Humber SA,Humber Sea Area,,Ocean,Sea,No
+1081,Oyster Ground,Oyster Ground,In the Humber Sea Area,Ocean,Sea,No
+1082,Cleaver Bank,Cleaver Bank,In the Humber Sea Area,Ocean,Sea,No
+1083,In. Silver Pit,Inner Silver Pit,In the Humber Sea Area,Ocean,Sea,No
+1084,Out. Silver Pit,Outer Silver Pit,In the Humber Sea Area,Ocean,Sea,No
+1085,The Wash,The Wash,In the Humber Sea Area,Ocean,Sea,No
+1090,Thames SA,Thames Sea Area,,Ocean,Sea,No
+1091,Broad Fourteens,Broad Fourteens, in the Thames Sea Area,Ocean,Sea,No
+1092,"The Scheldt, the Hondt, and the Sloe","The Scheldt, the Hondt, and the Sloe", in the Thames Sea Area,Ocean,Sea,No
+1093,Goodwin Sands & Downs Anchorage,Goodwin Sands and the Downs Anchorage,Beyond the Thames,Ocean,Sea,No
+1094,Queen’s Channel,The Queen’s Channel,At the mouth of the Thames,Ocean,Sea,No
+1095,Nore,The Nore,In the Thames,Ocean,Sea,No
+1096,Yarmouth Roads,The Anchorage of Yarmouth Roads,Beyond the Thames,Ocean,Sea,No
+1100,Dover SA,Dover Sea Area,,Ocean,Sea,No
+1101,Dover Straits,The Straits of Dover,,Ocean,Sea,No
+1102,White Cliffs,White Cliffs of Dover,,Ocean,Sea,No
+1103,Sandettie,Sandettie Bank,Off Dover,Ocean,Sea,No
+1110,Wight,Isle of Wight,Off the Coast of Southampshire,Ocean,Island,Yes
+1111,Solent,The Solent,Between Portsmouth and the Isle of Wight,Ocean,Sea,No
+1112,Spithead,Spithead in the Solent,East of the Isle of Wight,Ocean,Sea,No
+1113,Kingmere,The Kingmere Rocks and the Seven Sisters,East of the Isle of Wight,Ocean,Sea,No
+1114,Somme,Bay of the Somme (Wight),In the Isle of Wight Sea Area,Ocean,Sea,No
+1115,Seine,Bay of the Seine (Wight),In the Isle of Wight Sea Area,Ocean,Sea,No
+1116,Barfleur,Barfleur and La Hougue,In the Isle of Wight Sea Area,Ocean,Sea,No
+1120,Portland SA,Portland Sea Area,,Ocean,Sea,No
+1121,Hurd,Hurd’s Deep,South of the Isle of Portland,Ocean,Sea,No
+1122,Malo,Gulf of St Malo,In the Portland Sea Area,Ocean,Sea,No
+1123,Alderney,Alderney Race,In the Portland Sea Area,Ocean,Sea,No
+1124,Lyme,Lyme Bay,West of the Isle of Portland,Ocean,Sea,No
+1130,Plymouth SA,Plymouth Sea Area,,Ocean,Sea,No
+1131,eddystone,Les Sept-Isles and Eddystone Rocks (Plymouth),,Ocean,Sea,No
+1132,abers,Les Abers & Point de Corsen (Plymouth),,Ocean,Sea,No
+1133,E Celtic,E Celtic Sea (Plymouth),,Ocean,Sea,No
+1134,Carrick Roads,Carrick Roads (Plymouth),,Ocean,Sea,No
+1140,Bay of Biscay,,,Ocean,Sea,No
+1141,Rade de Brest & the Bay of Douarnenez (Biscay),,,Ocean,Sea,No
+1142,Audierne Bay (Biscay),,,Ocean,Sea,No
+1143,Quiberon Bay (Biscay),,,Ocean,Sea,No
+1144,Amorican Margin (Biscay),,,Ocean,Sea,No
+1145,Iroise Sea (Biscay),,,Ocean,Sea,No
+1150,Finisterre,,,Ocean,Sea,No
+1151,Delesse Spur (Finisterre),,,Ocean,Sea,No
+1152,Meriadzec Terrace (Finisterre),,,Ocean,Sea,No
+1153,Aegis Spur (Finisterre),,,Ocean,Sea,No
+1154,Berthois Spur (Finisterre),,,Ocean,Sea,No
+1160,Sole Banks SA,Sole Banks Sea Area,,Ocean,Sea,No
+1161,Goban Spur,Goban Spur,In the Sole Banks Sea Area,Ocean,Sea,No
+1162,La Chapelle Bank,La Chapelle Bank,In the Sole Banks Sea Area,Ocean,Sea,No
+1163,Porcupine Abyssal,Porcupine Abyssal,In the Sole Banks Sea Area,Ocean,Sea,No
+1164,Pendragon Escarpment,Pendragon Escarpment,In the Sole Banks Sea Area,Ocean,Sea,No
+1170,Isles of Scilly SA,Isles of Scilly Sea Area,,Ocean,Coast,Yes
+1171,St Ives’ Bay,St Ives’ Bay,North of the Isles of Scilly,Ocean,Sea,No
+1172,Mount’s Bay,Mount’s Bay,East of the Isles of Scilly,Ocean,Sea,No
+1173,W Celtic Sea,West Celtic Sea,South of the Isles of Scilly,Ocean,Sea,No
+1174,Pol Bank,Pol Bank,West of the Isles of Scilly,Ocean,Sea,No
+1180,St George’s Channel SA,St George’s Channel Sea Area,,Ocean,Sea,No
+1181,Cardigan Bay,Cardigan Bay,In St George’s Channel,Ocean,Sea,No
+1182,Carmarthen Bay,Carmarthen Bay,In St George’s Channel,Ocean,Sea,No
+1183,Bristol Channel,Bristol Channel,In St George’s Channel,Ocean,Sea,No
+1184,Bude Bay,Bude Bay,In St George’s Channel,Ocean,Sea,No
+1185,St Bride’s Bay,St Bride’s Bay,In St George’s Channel,Ocean,Sea,No
+1186,Carnsore Point,Carnsore Point,In St George’s Channel,Ocean,Sea,No
+1190,Fastnet SA,Fastnet Sea Area,,Ocean,Sea,No
+1191,Tramore Bay,,In the Fastnet Sea Area,Ocean,Sea,No
+1192,Courtmacsherry Bay,,In the Fastnet Sea Area,Ocean,Sea,No
+1193,Porcupine Seabight,,In the Fastnet Sea Area,Ocean,Sea,No
+1194,Bantry Bay & Mizen Head,,In the Fastnet Sea Area,Ocean,Sea,No
+1200,Irish Sea SA,Irish Sea Area,,Ocean,Sea,No
+1201,Luce Bay,Luce Bay,In the Irish Sea,Ocean,Sea,No
+1202,Solway Firth,Solway Firth,In the Irish Sea,Ocean,Sea,No
+1203,Morecambe Bay,Morecambe Bay,In the Irish Sea,Ocean,Sea,No
+1204,Dublin & Caernarfon Bays,Dublin & Caernarfon Bays,In the Irish Sea,Ocean,Sea,No
+1205,Dundalk Bay & Strangford Lough,Dundalk Bay & Strangford Lough,In the Irish Sea,Ocean,Sea,No
+1210,Shannon SA,Shannon Sea Area,,Ocean,Sea,No
+1211,Bertraghboy Bay,Bertraghboy Bay,In the Shannon Sea Area,Ocean,Sea,No
+1212,Galway Bay,Galway Bay,In the Shannon Sea Area,Ocean,Sea,No
+1213,Shannon Estuary,Shannon Estuary,In the Shannon Sea Area,Ocean,Sea,No
+1214,Smerwick Harbour & Dingle Bay,Smerwick Harbour & Dingle Bay,In the Shannon Sea Area,Ocean,Sea,No
+1215,Porcupine Bank,,In the Shannon Sea Area,Ocean,Sea,No
+1220,North Channel SA,North Channel Sea Area,,Ocean,Sea,No
+1221,Firth of Lorne,Firth of Lorne,In the North Channel,Ocean,Sea,No
+1222,Sound of Jura,Sound of Jura,In the North Channel,Ocean,Sea,No
+1223,Sound of Kilbrannon,Sound of Kilbrannon,In the North Channel,Ocean,Sea,No
+1224,Firth of Clyde,Firth of Clyde,In the North Channel,Ocean,Sea,No
+1225,Straits of Moyle,Straits of Moyle,In the North Channel,Ocean,Sea,No
+1226,Belfast Lough,Belfast Lough,In the North Channel,Ocean,Sea,No
+1227,Skerryvore Grounds,Skerryvore Grounds,In the North Channel,Ocean,Sea,No
+1230,Rockall SA,Rockall Sea Area,,Ocean,Sea,No
+1231,Anton,Anton Dohrn Seamount,In the Rockall Sea Area,Ocean,Sea,No
+1232,Inishkea,Inishkea Islands,In the Rockall Sea Area,Ocean,Sea,No
+1233,Killary,Killary Harbour & Clew Bay,In the Rockall Sea Area,Ocean,Sea,No
+1234,Slyne,Slyne Ridge,In the Rockall Sea Area,Ocean,Sea,No
+1235,Bryony,Bryony Bank,In the Rockall Sea Area,Ocean,Sea,No
+1236,Helen,Helen’s Reef,In the Rockall Sea Area,Ocean,Sea,No
+1240,Malin SA,Malin Sea Area,,Ocean,Sea,No
+1241,Stanton Banks (Malin),Stanton Banks,In the Malin Sea Area,Ocean,Sea,No
+1242,Bloody Foreland (Malin),Bloody Foreland,In the Malin Sea Area,Ocean,Sea,No
+1243,Donegal and Sligo Bays (Malin),Donegal and Sligo Bays,In the Malin Sea Area,Ocean,Sea,No
+1244,Killala Bay & Broad Haven (Malin),Killala Bay & Broad Haven,In the Malin Sea Area,Ocean,Sea,No
+1250,Hebrides SA,Hebrides Sea Area,,Ocean,Sea,No
+1251,Sulisker Bank & Flannan Ground (Hebrides),,In the Hebrides Sea Area,Ocean,Sea,No
+1252,Sound of Harris (Hebrides),Sound of Harris,In the Hebrides Sea Area,Ocean,Sea,No
+1253,Sound of Monach (Hebrides),Sound of Monach,In the Hebrides Sea Area,Ocean,Sea,No
+1254,Gieke Slide (Hebrides),Gieke Slide,In the Hebrides Sea Area,Ocean,Sea,No
+1260,Inner Seas SA,Inner Seas Area,,Ocean,Sea,No
+1261,The Minch,The Minch,In the Inner Seas Area,Ocean,Sea,No
+1262,The Little Minch,The Little Minch,In the Inner Seas Area,Ocean,Sea,No
+1263,E Mingulay & Tiree,East Mingulay Reefs & the Passage of Tiree,In the Inner Seas Area,Ocean,Sea,No
+2000,Viking,Viking,,Ocean,Sea,No
+2001,Swallow Hole,Swallow Hole,,Ocean,Sea,No
+2002,Zuidersee,Zuidersee,,Ocean,Sea,No
+2003,Southwest Approaches,Southwest Approaches,,Ocean,Sea,No
+2004,The Open Ocean,The Open Ocean,,Ocean,Sea,No
+2005,Lough Neagh,Lough Neagh,,Ocean,Sea,No
+2006,Bailey Bank,Bill Bailey’s Bank,,Ocean,Sea,No
+2007,Faroes Seas,The Seas around the Faroes,,Ocean,Sea,No
