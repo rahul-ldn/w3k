@@ -73,7 +73,7 @@ function build_map_data(map_data) {
 
 function add_territory (map_data, num_d, short_d, long_d, reg_d, zone_d, type_d, supply_d) {
 	var supply_present = false;
-	switch supply_d {
+	switch (supply_d) {
 		case "No" : supply_present = false; break;
 		case "Neutral" :  supply_present = true; break;
 		case powers_list[0] : supply_present = true; break;
