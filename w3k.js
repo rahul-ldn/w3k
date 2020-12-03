@@ -20,36 +20,18 @@ var powers_list = [
 	"Confederacy",
 ];
 
-function parse_csv(url, stepArr){
-   return new Promise(function(resolve, reject){
-       Papa.parse(url, {
-           download:true,
-           step: function(row){
-           		console.log("Read row: "+row.data);
-              stepArr.push(row.data)
-           },
-           complete: resolve       
-       });        
-   });
-}
-
-
 
 function build_map_data(map_data) {
 
 
 		//Papaparse details
 		var raw_details = [];
-		var raw_links = [];
-		const load_details = parse_csv("w3k.territory-details.csv", raw_details);
-		const load_links = parse_csv("w3k.territory-links.csv", raw_links);
-		Promise.all([ load_details, load_links]).then(console.log("CSV Import Complete"));
-
-		console.log(raw_details);
-		console.log(raw_links);
-		/*
 		Papa.parse("w3k.territory-details.csv", {
 		download: true,
+		step: function(results, parser) {
+			console.log("Row data:", results.data);
+			console.log("Row errors:", results.errors);
+		},
 		complete: function(details, file) {
 			console.log("Parsing complete:", details, file);
 			raw_details = JSON.parse(JSON.stringify(details));
@@ -60,9 +42,13 @@ function build_map_data(map_data) {
 		console.log("Results");
 		console.log(raw_details);
 		//papaparse links
-
+		var raw_links = [];
 		Papa.parse("w3k.territory-links.csv", {
 		download: true,
+		step: function(results, parser) {
+			console.log("Row data:", results.data);
+			console.log("Row errors:", results.errors);
+		},
 		complete: function(links, file) {
 			console.log("Parsing complete:", links, file);
 			raw_links = JSON.parse(JSON.stringify(links));
@@ -71,7 +57,7 @@ function build_map_data(map_data) {
 
 		});
 		console.log("Results");
-		console.log(raw_links);*/
+		console.log(raw_links);
 
 	//for each record in raw_details
 	//push details data into map_data
