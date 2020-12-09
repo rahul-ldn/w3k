@@ -1,0 +1,292 @@
+<HTML>
+<HEAD>
+	<TITLE>Wars of the Three Kingdoms</TITLE>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js" integrity="sha512-vs7+jbztHoMto5Yd/yinM4/y2DOkPLt0fATcN+j+G4ANY2z4faIzZIOMkpBmWdcxt+596FemCh9M18NUJTZwvw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js" integrity="sha512-1LyBPWtezbX0LO4X4QzhfZd9jSetVu5W0IFpMV9ecq4lJUQBR6hx8uiNfUI2Aoe7LCF4rK1NV3rY+uil4VJ3QQ==" crossorigin="anonymous"></script>
+	<SCRIPT SRC="w3k.territory-details.js"></SCRIPT>
+	<SCRIPT SRC="w3k.territory-links.js"></SCRIPT>
+	<SCRIPT SRC="w3k.js"></SCRIPT>
+	<SCRIPT>
+		var map_data = [];
+		var power_data = {};
+		build_core_data(map_data, power_data);
+		var select_data = build_select_data(map_data, power_data);
+
+
+
+
+		//map_data.forEach(
+		//	territory => validate_territory(map_data, territory));
+		//console.log(map_data);
+		$(document).ready(function() {
+			var w3k_territory=$('.w3k-territory');
+			var w3k_name=$('#territory-name');
+			var w3k_zone=$('#territory-zone');
+			var w3k_supply=$('#territory-supply');
+    w3k_territory.select2({
+    	data : select_data.results,
+    	placeholder: 'W3K territories',
+    	allowClear: true,
+    });
+   	$("#the_land").hide();
+   	$("#the_seas").hide();
+   	$("#the_north").hide();
+   	$("#the_south").hide();
+   	$("#the_east").hide();
+   	$("#the_west").hide();
+
+  /* 	function links_model() {
+    var self = this;
+ 
+    self.region_land = ko.observableArray([]);
+    self.region_seas = ko.observableArray([]);
+    self.region_north = ko.observableArray([]);
+    self.region_south = ko.observableArray([]);
+    self.region_west = ko.observableArray([]);
+    self.region_east = ko.observableArray([]);
+ 
+    self.reset = function() {
+        self.people.push({ name: "New at " + new Date() });
+    };
+ 
+    self.removePerson = function() {
+        self.people.remove(this);
+    }
+}*/
+
+		var draft_data = [
+			{
+				region_name : "test"
+			},
+			{
+				region_name : "test"
+			},
+			{	region_name : "test3"
+			}
+		];
+		var region_links_template = {
+			region_land 	: draft_data,
+			region_seas 	: draft_data,
+			region_north	: draft_data,
+			region_south	: draft_data,
+			region_east		: draft_data,
+			region_west		: draft_data
+		};
+
+		var region_links 	= ko.mapping.fromJS(region_links_template);
+
+   		ko.applyBindings(region_links);
+    
+	w3k_territory.on('select2:select', function (e) {
+		$("#the_land").hide();
+   		$("#the_seas").hide();
+   		$("#the_north").hide();
+   		$("#the_south").hide();
+   		$("#the_east").hide();
+   		$("#the_west").hide();
+   		
+   		
+		var selection = e.params.data;
+			//console.log(selection);
+			var name_text = map_data[selection.id].longname;
+			if (map_data[selection.id].region != "N/A") {
+				var region_text = map_data[selection.id].region;
+				name_text += ", "+region_text[0].toLowerCase() + region_text.substring(1);};
+
+				var zone_text = '"'
+				switch (map_data[selection.id].zone) {
+					case "England"		: zone_text = "on English soil";break;
+					case "Wales"		: zone_text = "located in Wales";break;
+					case "Scotland"		: zone_text = "a part of Scotland";break;
+					case "Ireland"		: zone_text = "within Ireland";break;
+					case "Continent"	: zone_text = "on the Continent";break;
+					case "Ocean"		: zone_text = "in the Seas around the British Isles";break;
+				}
+
+			w3k_name.text(name_text+", "+zone_text)
+			if (map_data[selection.id].supply) {w3k_supply.text("This is a supply centre!")};
+			interfaces_list.forEach( 
+				function (interface, inum) {
+				if (map_data[selection.id].access[interface]) {
+					switch (interface) {
+						case interfaces_list[0] : 
+							$("#the_land").show();
+							var land_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => land_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_land = land_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						case interfaces_list[5] : 
+							$("#the_seas").show(); 
+							var seas_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => seas_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_seas = seas_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						case interfaces_list[1] : 
+							$("#the_north").show(); 
+							var north_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => north_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_north = north_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						case interfaces_list[3] : 
+							$("#the_south").show(); 
+							var south_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => south_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_south = south_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						case interfaces_list[2] : 
+							$("#the_east").show(); 
+							var east_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => east_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_east = east_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						case interfaces_list[4] : 
+							$("#the_west").show(); 
+							var west_links = [];
+							map_data[selection.id].links[interface].forEach (
+								new_link => west_links.push({region_name : map_data[new_link].longname}));
+							region_links_template.region_west = west_links;
+							console.log(region_links_template);
+							ko.mapping.fromJS(region_links_template,region_links);
+							break;
+						default : console.log(" and (ERROR!) dear god something is wrong!!");
+					};
+				}; // if interface exists
+		});
+			//The interfaces!
+			// identify the various interfaces
+			//pull the links for each
+			//add their names to the data structure
+		}); // End of event handler
+
+});
+
+		
+
+
+	</SCRIPT>
+</HEAD>
+<BODY> 
+		<h1>Valid movement options and support targets</h1>
+
+		<label for="w3k-territory-search">
+			Type the name of the territory here:
+		<Select data-placeholder="W3K territories" class="w3k-territory" name="w3k-territory-search" style="width: 400px">
+			<option></option>
+		</Select></label>
+		<br><br><br>
+		<h3><div id="territory-name" style=""> </div></h3>
+		<div id="territory-supply" style="width: 400px"> </div>
+		<br><br>
+		<div id="the_land">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-land">An Army in this region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody  data-bind="foreach:region_land">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="the_north">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-north">A Fleet anchored along the north coast of this region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:region_north">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="the_east">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-east">A Fleet anchored along the east coast of this region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:region_east">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="the_south">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-south">A Fleet anchored along the south coast of region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:region_south">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="the_west">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-west">A Fleet anchored along the west coast of region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:region_west">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="the_seas">
+			<table>
+				<thead>
+					<tr>
+						<th id="th-seas">A Fleet anchored along the coast of this region may travel to:</th>
+					</tr>
+				</thead>
+				<tbody data-bind="foreach:region_seas">
+					<tr>
+						<td data-bind="text:region_name"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+</BODY>
+<SCRIPT>
+
+
+</SCRIPT>
+
+</HTML>

@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+	<TITLE>Wars of the Three Kingdoms Validation and Testing</TITLE>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<SCRIPT SRC="w3k.territory-details.js"></SCRIPT>
+	<SCRIPT SRC="w3k.territory-links.js"></SCRIPT>
+	<SCRIPT SRC="w3k.js"></SCRIPT>
+	<SCRIPT>
+		var map_data = [];
+		var power_data = {};
+		build_core_data(map_data, power_data);
+		map_data.forEach(
+			territory => validate_territory(map_data, territory));
+		console.log(map_data);
+
+
+
+	</SCRIPT>
+</HEAD>
+<BODY> 
+	<div style="width: 1000"><div width = "500" style="float: left">
+<canvas id="chart-turns" width="500" height="500"></canvas></div><div width="500" style="float:right"> <canvas id="chart-enemies" width="500" height="500"></canvas> </div></div>
+<div style="width: 1000">
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-0" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-1" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-2" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-3" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-4" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-5" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-6" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-7" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-8" width="180" height="300"></canvas></div>
+	<div width = "180" style="float: left;padding:10px"><canvas id="chart-radar-9" width="180" height="300"></canvas></div>
+</div>
+</BODY>
+<SCRIPT>
+		var c1 = document.getElementById('chart-turns').getContext('2d');
+	var chart_turns = new Chart(c1, {
+
+  type: 'line',
+  data: {
+    labels: [1,2,3,4,5,6,7],
+    datasets: chart_turns_data,
+  },
+  options: {
+  	responsive : false,
+  	legend : {
+  		position : "right",
+  	},
+    title: {
+      display: true,
+      text: 'SC encounter by turn'
+    }
+  }
+});
+
+			var c2 = document.getElementById('chart-enemies').getContext('2d');
+	var chart_enemies = new Chart(c2, {
+
+  type: 'horizontalBar',
+  data: {
+    labels: [1,2,3,4,5,6,7],
+    datasets: chart_enemies_data,
+  },
+  options: {
+  	responsive : false,
+  	legend : {
+  		position : "right",
+  	},
+    title: {
+      display: true,
+      text: 'Hostile Home SC encounter by turn'
+    }
+  }
+});
+
+//	console.log(chart_radar[0]);
+var c_r0 = document.getElementById('chart-radar-0').getContext('2d');
+	var chart_r0 = new Chart(c_r0, chart_radar[0]);
+var c_r1 = document.getElementById('chart-radar-1').getContext('2d');
+	var chart_r1 = new Chart(c_r1, chart_radar[1]);
+var c_r2 = document.getElementById('chart-radar-2').getContext('2d');
+	var chart_r2 = new Chart(c_r2, chart_radar[2]);
+var c_r3 = document.getElementById('chart-radar-3').getContext('2d');
+	var chart_r3 = new Chart(c_r3, chart_radar[3]);
+var c_r4 = document.getElementById('chart-radar-4').getContext('2d');
+	var chart_r4 = new Chart(c_r4, chart_radar[4]);
+var c_r5 = document.getElementById('chart-radar-5').getContext('2d');
+	var chart_r5 = new Chart(c_r5, chart_radar[5]);
+var c_r6 = document.getElementById('chart-radar-6').getContext('2d');
+	var chart_r6 = new Chart(c_r6, chart_radar[6]);
+var c_r7 = document.getElementById('chart-radar-7').getContext('2d');
+	var chart_r7 = new Chart(c_r7, chart_radar[7]);
+var c_r8 = document.getElementById('chart-radar-8').getContext('2d');
+	var chart_r8 = new Chart(c_r8, chart_radar[8]);
+var c_r9 = document.getElementById('chart-radar-9').getContext('2d');
+	var chart_r9 = new Chart(c_r9, chart_radar[9]);
+
+</SCRIPT>
+
+</HTML>
