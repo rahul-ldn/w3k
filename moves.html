@@ -118,7 +118,7 @@
 							$("#the_land").show();
 							var land_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => land_links.push({region_name : map_data[new_link].longname}));
+								new_link => land_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_land = land_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
@@ -127,7 +127,7 @@
 							$("#the_seas").show(); 
 							var seas_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => seas_links.push({region_name : map_data[new_link].longname}));
+								new_link => seas_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_seas = seas_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
@@ -136,7 +136,7 @@
 							$("#the_north").show(); 
 							var north_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => north_links.push({region_name : map_data[new_link].longname}));
+								new_link => north_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_north = north_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
@@ -145,7 +145,7 @@
 							$("#the_south").show(); 
 							var south_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => south_links.push({region_name : map_data[new_link].longname}));
+								new_link => south_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_south = south_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
@@ -154,7 +154,7 @@
 							$("#the_east").show(); 
 							var east_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => east_links.push({region_name : map_data[new_link].longname}));
+								new_link => east_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_east = east_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
@@ -163,7 +163,7 @@
 							$("#the_west").show(); 
 							var west_links = [];
 							map_data[selection.id].links[interface].forEach (
-								new_link => west_links.push({region_name : map_data[new_link].longname}));
+								new_link => west_links.push({region_name : map_data[linked_territory(new_link)].longname}));
 							region_links_template.region_west = west_links;
 							console.log(region_links_template);
 							ko.mapping.fromJS(region_links_template,region_links);
