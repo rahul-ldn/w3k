@@ -109,7 +109,10 @@
 				}
 
 			w3k_name.text(name_text+", "+zone_text)
-			if (map_data[selection.id].supply) {w3k_supply.text("This is a supply centre!")};
+			if (map_data[selection.id].supply) {w3k_supply.text("This is a supply centre!")} 
+				else {
+					w3k_supply.text("");
+				};
 			interfaces_list.forEach( 
 				function (interface, inum) {
 				if (map_data[selection.id].access[interface]) {
